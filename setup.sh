@@ -2,6 +2,7 @@
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 #settings for automatically login to bash shell on terminal
 echo "bash" >> ~/.cshrc
+echo "unset ignoreeof" >> ~/.cshrc
 
 #copy bashrc to your home directory
 cat $SCRIPT_DIR/bashrc >> ~/.bashrc
@@ -39,7 +40,7 @@ echo "please set your terminal font as 'Ubuntu Mono derivative Powerline Regular
 echo "==="
 
 pip3 install pynvim
-pip3 install --update msgpack
+pip3 install msgpack
 
 
 echo "setting inputrc"
@@ -49,5 +50,13 @@ echo "setting inputrc end"
 echo "setting bash_aliases"
 echo "source $SCRIPT_DIR/bash_aliases" >> ~/.bash_aliases
 echo "setting bash_aliases end"
+
+echo "setting login"
+cat $SCRIPT_DIR/login > ~/.login
+echo "setting login end"
+
+echo "setting logout"
+cat $SCRIPT_DIR/logout > ~/.logout
+echo "setting logout end"
 
 source ~/.bashrc

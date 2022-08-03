@@ -55,7 +55,7 @@ set showcmd
 " ファイルを上書きする前にバックアップを作ることを無効化
 set nowritebackup
 " マウス操作有効化
-"set mouse=a
+set mouse=a
 
 " 操作系
 " insertモードでjjをESCとして扱う
@@ -171,12 +171,8 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
-" deoplete
-let g:deoplete#enable_at_startup = 1
 
 source ~/seminar_settings/plugin/airline.vim
 source ~/seminar_settings/plugin/nerdtree.vim
-source ~/seminar_settings/plugin/deoplete.vim
 source ~/seminar_settings/plugin/yankround.vim
-source ~/seminar_settings/plugin/denite.vim
 source ~/seminar_settings/plugin/vim-figitive.vim
