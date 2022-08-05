@@ -1,5 +1,6 @@
 #!/bin/bash
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
+$SCRIPT_DIR/make_backups.sh
 #settings for automatically login to bash shell on terminal
 echo "bash" >> ~/.cshrc
 echo "unset ignoreeof" >> ~/.cshrc
@@ -34,6 +35,8 @@ echo "installing powerline font"
 git clone https://github.com/powerline/fonts.git --depth=1 /tmp/powerline_fonts \
 && cd /tmp/powerline_fonts \
 && ./install.sh
+
+cd $SCRIPT_DIR
 
 # echo "==="
 # echo "please set your terminal font as 'Ubuntu Mono derivative Powerline Regular'"
