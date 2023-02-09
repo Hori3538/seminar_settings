@@ -42,6 +42,6 @@ fi
 if [ -d $BACKUP_DIR/.vim ]; then
     cp -r $BACKUP_DIR/.vim ~/
 elif [ -d ~/.vim ]; then
-    rm -r ~/.vim
+    rm -rf ~/.vim
 fi
 
