@@ -3,6 +3,6 @@
 
 ## install
 - on your terminal home directory 
-   - git clone http://github.com/ibuki1805/seminar_settings.git
+   - git clone http://github.com/Hori3538/seminar_settings.git
 - cd seminar_settings
 - ./setup.sh
