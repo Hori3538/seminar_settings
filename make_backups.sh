@@ -15,14 +15,6 @@ if [ ! -d $SCRITP_DIR/settings_backup ]; then
         cp ~/.bashrc $BACKUP_DIR
     fi
 
-    if [ -f ~/.vimrc ]; then
-        cp ~/.vimrc $BACKUP_DIR
-    fi
-
-    if [ -d ~/.vim ]; then
-        cp -r ~/.vim $BACKUP_DIR
-    fi
-
     if [ -f ~/.inputrc ]; then
         cp ~/.inputrc $BACKUP_DIR
     fi
