@@ -32,16 +32,3 @@ if [ -f $BACKUP_DIR/.logout ]; then
 elif [ -f ~/.logout]; then
     rm ~/.logout
 fi
-
-if [ -f $BACKUP_DIR/.vimrc ]; then
-    cp $BACKUP_DIR/.vimrc ~/
-elif [ -f ~/.vimrc ]; then
-    rm ~/.vimrc
-fi
-
-if [ -d $BACKUP_DIR/.vim ]; then
-    cp -r $BACKUP_DIR/.vim ~/
-elif [ -d ~/.vim ]; then
-    rm -rf ~/.vim
-fi
-
