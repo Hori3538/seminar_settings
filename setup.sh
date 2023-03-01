@@ -8,9 +8,6 @@ echo "unset ignoreeof" >> ~/.cshrc
 #copy bashrc to your home directory
 cat $SCRIPT_DIR/bashrc >> ~/.bashrc
 
-#vim settings
-echo "source $SCRIPT_DIR/vimrc" >> ~/.vimrc
-
 echo "installing powerline font"
 git clone https://github.com/powerline/fonts.git --depth=1 /tmp/powerline_fonts \
 && cd /tmp/powerline_fonts \
