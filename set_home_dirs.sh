@@ -1,9 +1,5 @@
 #!/bin/bash
 
-if [ ! -d ~/.vim/undo ]; then
-    mkdir -p ~/.vim/undo
-fi
-
 if [ ! -d ~/Downloads ]; then
     mkdir ~/Downloads
 fi
